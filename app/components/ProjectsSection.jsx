@@ -12,7 +12,7 @@ const projectsData = [
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Parasadkurkar/Personal-Portfolio",
-    previewUrl: "https://paras.vercel.app/",
+    previewUrl: "https://parastech.vercel.app/",
   },
   {
     id: 2,
