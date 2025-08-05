@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --background-color: #121212;
+  --text-color1: #ffffff;
+  --test-color2: #ADB7BE;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+html {
+  /* appearance: none; */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow:hidden;
+  /* color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb)); */
+}
+
+.fade {
+  animation: changeZIndex 6.2s forwards;
+}
+
+@keyframes changeZIndex {
+  0% {
+    z-index: 1;
+  }
+  100% {
+    z-index: -1;
+    display: none;
+  }
+}
+
+.backthemeColor {
+  background-color: var(--background-color);
+  /* background-color: #121212; */
+}
+
+.textColor1{
+  color: var(--text-color1);
+  /* color: white; */
+}
+
+.textColor2{
+  color : var(--test-color2);
+  /* color : #ADB7BE */
+}
+
+.backThemeColor0{
+  background-color: #181818;
+}
+
+#diamond{
+  fill: #ffffff;
+  display: inline;
+  margin-top: 3px;
+}
